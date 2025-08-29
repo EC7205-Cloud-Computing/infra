@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
         - name: auth-service
-          image: localhost:5000/auth-service:1.0
-          imagePullPolicy: Never
+          image: localhost:5000/auth-service:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
 ---
@@ -49,8 +49,8 @@ spec:
     spec:
       containers:
         - name: blog-service
-          image: localhost:5000/blog-service:1.0
-          imagePullPolicy: Never
+          image: localhost:5000/blog-service:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 4000
 ---
@@ -83,8 +83,8 @@ spec:
     spec:
       containers:
         - name: blog-client
-          image: localhost:5000/blog-client:1.0
-          imagePullPolicy: Never
+          image: localhost:5000/blog-client:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
 ---
