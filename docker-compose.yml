@@ -1,0 +1,21 @@
+services:
+  auth:
+    build:
+      context: ./authentication
+    image: localhost:5000/auth-service:1.0
+    ports:
+      - "3000:3000"
+
+  blog-client:
+    build:
+      context: ./Blog-Master
+    image: localhost:5000/blog-client:1.0
+    ports:
+      - "3001:80"
+
+  blog-service:
+    build:
+      context: ./MicroService-Blog-CRUD-Service/blog-crud-service
+    image: localhost:5000/blog-service:1.0
+    ports:
+      - "3002:4000"

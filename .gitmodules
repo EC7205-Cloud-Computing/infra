@@ -1,0 +1,9 @@
+[submodule "authentication"]
+	path = authentication
+	url = https://github.com/pawan-kavinda/Micro-Service-Authentication-Server
+[submodule "Blog-Master"]
+	path = Blog-Master
+	url = https://github.com/pawan-kavinda/Blog-master-client-service
+[submodule "MicroService-Blog-CRUD-Service"]
+	path = MicroService-Blog-CRUD-Service
+	url = https://github.com/pawan-kavinda/Blog-master-api-service
